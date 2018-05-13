@@ -1,0 +1,24 @@
+.video{ /* Just to make demo pretty */
+  margin: 0 auto;
+  width: 560px;
+}
+.video__link{
+  display: inline-block;
+  position: relative;
+}
+/* You can replace this with a pretty Play icon perhaps? */
+.video__link::after{
+  content: "Play";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  transform: translate(-50%, -50%);
+  transition: all 250ms;
+}
+.video__link:hover::after{
+  background-color: crimson;
+}
